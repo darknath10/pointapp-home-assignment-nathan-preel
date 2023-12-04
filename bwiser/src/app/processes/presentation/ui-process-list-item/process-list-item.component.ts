@@ -2,7 +2,7 @@ import { NgClass, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { ProgressSpinnerWithLabelComponent } from '../../../shared/ui';
 
-type ProcessListItem = { id: number, name: string; stepsCompletedRatio: number; stepsCompleted: number; stepsTotal: number };
+type ProcessListItem = { id: string, name: string; stepsCompletedRatio: number; stepsCompleted: number; stepsTotal: number };
 
 @Component({
   selector: 'bw-process-list-item',
@@ -39,5 +39,5 @@ type ProcessListItem = { id: number, name: string; stepsCompletedRatio: number; 
 export class ProcessListItemComponent {
   @Input({ required: true }) process!: ProcessListItem;
   @Input() selected = false;
-  @Output() processSelected = new EventEmitter<number>();
+  @Output() processSelected = new EventEmitter<string>();
 }

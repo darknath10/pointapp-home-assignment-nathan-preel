@@ -1,7 +1,7 @@
 import { Step } from './step';
 
 export type Process = {
-  id: number;
+  id: string;
   name: string;
   steps: Step[];
 };

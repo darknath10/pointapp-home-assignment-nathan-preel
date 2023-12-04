@@ -1,1 +1,2 @@
-export * from './feat-process-list/process-list.component';
+export * from './feat-process-list';
+export * from './feat-task-list';

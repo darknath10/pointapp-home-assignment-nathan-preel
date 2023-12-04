@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { ProcessListItemComponent } from '../ui-process-list-item/process-list-item.component';
+import { ProcessListItemComponent } from '../ui-process-list-item';
 import { ProcessesStore } from '../../core';
 
 @Component({
